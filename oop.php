@@ -1,4 +1,12 @@
-include('ustrednyPrefix.php')
-class ustrednyPrefix {}
-$napetiPrefix
-$napeti ustrednaPrefix
+ <?php
+
+
+include('ustrednyPrefix.php');
+class ustrednyPrefix {Boukal};
+$napetiPrefix[´firstname´]=;
+$napeti ustrednaPrefix;
+ 
+
+
+
+?>
