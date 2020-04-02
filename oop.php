@@ -1,7 +1,17 @@
  <?php
-//moc to nechápu, tak odevzdávám alespoň něco než nic. 
 //Štěpán Boukal ZT3
-	
+	}
+	// trida ustredna se dedi do abstraktni tridy ustredny
+	class  ustredna_Boukal extends ustredny_Boukal{
+	   public $Napeti_Boukal = 3;
+	   //nastavi konstanty type
+	   const TYPE = "3";
+	}
+	//trida ustredna dedi interface od abstraktni tridy ustredny
+	interface ustredna_Boukal extends ustredny_Boukal{
+	    //vypise nastavene hodnoty
+	    public function _contruct ($Napeti_Boukal);
+	}
 	//trida ktera je abstraktni ustredny a v ni protected $napetí
 	abstract class  ustredny_Boukal{
 	
@@ -14,23 +24,11 @@
 	    public function getNapeti_Boukal() {
 	        return $this-> napeti_Boukal;
 	    }
-	}
-	// trida ustredna se dedi do abstraktni tridy ustredny
-	class  ustredna_Boukal extends ustredny_Boukal{
-	   public $Napeti_Boukal = 3;
-	   //nastavi konstanty type
-	   const TYPE = "3";
-	}
-	//trida iustredna dedi interface od abstraktni tridy ustredny
-	interface ustredna_Boukal extends ustredny_Boukal{
-	    //vypise nastavene hodnoty
-	    public function _contruct ($Napeti_Boukal);
-	}
-	
-	//pres vardummp vypise hodnotu v type a hodnotu ustrednoveho napeti
+
+	//pres vardummp nakonec vypiseme hodnotu ustrednoveho napeti a hodnotu type
 	 var_dump (ustredna_Boukal::TYPE);
 	 var_dump ($Napeti_Boukal);
-
+	
 
 ////////////////////////////////////////////////////////////////////////////////////
 
